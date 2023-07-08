@@ -41,14 +41,25 @@ export const RestDetails = () => {
           <path d="M19 12H6M12 5l-7 7 7 7" />
         </svg>
       </h1>
-      <div>
-        <h1>{restData.name}</h1>
-        <p>Address: {restData.address}</p>
-        <p>Phone: {restData.phone}</p>
-        <p>Average Rating: {rating.toFixed(2)}</p>
-        <button onClick={() => setShow(!showReview)}>Add Review</button>
-        <hr></hr>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-around",
+          alignItems: "center",
+          //   gap: "50px",
+        }}
+      >
+        <div>
+          <h1>{restData.name}</h1>
+          <p>Address: {restData.address}</p>
+          <p>Phone: {restData.phone}</p>
+          <p>Average Rating: {rating.toFixed(2)}</p>
+        </div>
+        <button style={{ height: "50px" }} onClick={() => setShow(!showReview)}>
+          Add Review
+        </button>
       </div>
+      <hr></hr>
       <h2>Reviews</h2>
       <div className="userReviews">
         {restData.ratings.map((review) => (

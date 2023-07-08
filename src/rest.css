@@ -22,7 +22,7 @@
   align-items: center;
   justify-content: center;
 }
-img {
+.userReviews img {
   height: 60px;
   border-radius: 100%;
 }
