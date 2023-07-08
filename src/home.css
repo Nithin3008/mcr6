@@ -1,0 +1,33 @@
+body {
+  margin: 0 0;
+}
+.cusinieList {
+  display: flex;
+  justify-content: center;
+}
+li {
+  background-color: orange;
+  list-style: none;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+li:hover {
+  cursor: pointer;
+}
+.restaurentList__details li {
+  background-color: white;
+}
+.restaurentList__details img {
+  width: 150px;
+}
+.details__data {
+  display: flex;
+  justify-content: center;
+  padding: 10px 10px;
+}
+.details__data p {
+  border: 1px solid black;
+  padding: 10px 10px;
+  width: fit-content;
+  margin: 5px 5px;
+}
